@@ -1,12 +1,6 @@
 {
   const tasks = [
-    {
-      content: "jakies zadanie",
-    },
-
-    {
-        content: "jakies zadanie",
-      },
+    
   ];
 
   const display = () => {
@@ -14,14 +8,52 @@
 
     for (const task of tasks) {
       htmlString += `
-    <li class="form__taskItem js-form__Taskitem">${task.content}<i class="fas fa-trash"></i></li>
+    <li <span class=${task.done ? "\" list__item--done\">" : "\"list__item\">"}
+    ${task.content}</span><i class="fas fa-trash"></i></li>
     `;
     }
     document.querySelector(".js-form__ul").innerHTML = htmlString;
   };
 
-  const init = () => {
+  const toggleTaskDone = (taskIndex) => {
+    tasks[taskIndex].done = !tasks[taskIndex].done;
     display();
   };
+
+
+  const addNewTask = () =>{
+    tasks.push({
+        content: newTaskContent,
+    });
+    display();
+  }
+
+
+  const onFormSubmit = (event) =>{
+    event.preventDefault();
+    
+    newTaskContent = document.querySelector(".js-new__task").value.trim();
+    
+    if (newTaskContent === ""){
+    
+        return;
+    }
+        addNewTask(newTaskContent);
+    
+        
+    };
+
+  const init = () => {
+    
+ const form = document.querySelector(".js-form");
+
+ form.addEventListener("submit", onFormSubmit);
+
+
+ };
+
+
   init();
+
+
 }
