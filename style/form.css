@@ -1,0 +1,123 @@
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+justify-content: space-evenly;
+}
+
+header{
+    background: rgb(39,163,246);
+background: linear-gradient(90deg, rgba(39,163,246,1) 0%, rgba(49,137,179,1) 49%, rgba(0,212,255,1) 100%);
+text-align: center;
+padding:30px;
+color:white ;
+
+
+}
+
+h1{
+    margin-bottom: 15px;
+}
+
+h2{
+    padding: 10px;
+    margin:5px;
+    color: cornsilk;
+}
+
+.form__input{
+    padding: 10px;
+    border: none;
+    border-radius:3px;
+    flex-basis: 60%;
+    margin:15px;
+}
+
+@media (max-width: 590px) {
+    .form__input {
+        flex-basis: 80%;
+        margin-top: 10px;
+    }
+  }
+
+
+.form__button{
+    padding:10px;
+    border: none;
+    border-radius:3px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    background: rgb(224,118,14);
+background: linear-gradient(90deg, rgba(224,118,14,1) 0%, rgba(224,75,23,1) 49%, rgba(224,118,14,1) 100%);
+color: white;
+flex-basis: 25%;
+
+}
+
+
+.form__button:hover{
+    background: rgb(245,123,3);
+    background: linear-gradient(90deg, rgba(245,123,3,1) 0%, rgba(247,67,4,1) 49%, rgba(245,123,3,1) 100%);
+}
+
+
+@media (max-width: 590px) {
+    .form__button {
+        flex-basis: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+  }
+
+  ul{
+      margin: 0px;
+      display: contents;
+  }
+
+
+  ul li{
+      list-style: none;
+      cursor: pointer;
+      background: #eee;
+      padding:20px;
+      border-bottom: 1px solid #838586;
+      user-select: none;
+      position: relative;
+      
+  }
+
+  ul li:nth-child(add){
+      background: #b2bec3;
+  }
+
+  ul li:hover{
+      background: #ddd;
+  }
+
+  ul li.checked{
+      background: #888;
+      color: #fff;
+      text-decoration: line-through;
+  }
+
+  ul li :checked::before{
+      content: "";
+      position: absolute;
+      top:10px;
+      left: 15px;
+      height: 15px;
+      width: 7px;
+      border-color: blue;
+      border-style: solid;
+
+  }
+
+  .fas {
+      position: absolute;
+      right: 10px; 
+      
+      
+  }
+
+  

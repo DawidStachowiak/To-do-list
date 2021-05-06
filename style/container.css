@@ -1,0 +1,13 @@
+.container{
+    
+    width: 100%;
+    max-width: 980px;
+    margin:0 auto;
+    
+}
+
+
+section{
+    background: rgb(39,163,246);
+background: linear-gradient(90deg, rgba(39,163,246,1) 0%, rgba(49,137,179,1) 49%, rgba(0,212,255,1) 100%);
+}
