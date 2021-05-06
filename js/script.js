@@ -9,10 +9,24 @@
     for (const task of tasks) {
       htmlString += `
     <li <span class=${task.done ? "\" list__item--done\">" : "\"list__item\">"}
+    <button class="js-remove">usun</button>
     ${task.content}</span><i class="fas fa-trash"></i></li>
     `;
     }
     document.querySelector(".js-form__ul").innerHTML = htmlString;
+
+   const removeButtons = document.querySelectorAll(".js-remove");
+
+   removeButtons.forEach( (removeButton, index) => {
+       removeButton.addEventListener("click", () => {
+
+            tasks.splice(index, 1);
+            display();
+
+       });
+
+       
+   });
   };
 
   const toggleTaskDone = (taskIndex) => {
