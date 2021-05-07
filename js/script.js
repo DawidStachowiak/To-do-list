@@ -20,8 +20,7 @@
    removeButtons.forEach( (removeButton, index) => {
        removeButton.addEventListener("click", () => {
 
-            tasks.splice(index, 1);
-            display();
+            removeTask(index);
 
        });
 
@@ -41,6 +40,13 @@
     });
     display();
   }
+
+
+  const removeTask = (index) =>{
+
+    tasks.splice(index, 1);
+            display();
+  };
 
 
   const onFormSubmit = (event) =>{
