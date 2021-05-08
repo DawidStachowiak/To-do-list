@@ -17,10 +17,9 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/all.css" />
-    <link rel="stylesheet" href="style/all.min.css" />
     <link rel="stylesheet" href="style/container.css" />
     <link rel="stylesheet" href="style/form.css" />
+    <link rel="stylesheet" href="style/section.css" />
     <link rel="stylesheet" href="style/buttons.css" />
     <script defer src="js/script.js"></script>
 
@@ -29,35 +28,29 @@
 
   <body>
     <div class="container">
-      
-        
-          <header class="header">
-            <h1>Lista zadań</h1>
-            </header>
-            <section class="section">
-            <h2>Dodaj nowe zadanie</h2>
-            <form class="form js-form">
-            <input
-              class="form__input js-new__task"
-              type="text"
-              id="input"
-              placeholder="dodaj zadanie"
-              autofocus
-              required
-            />
-            <button class="form__button js-form__button">Dodaj zadanie</button>
-        
+      <header class="header">
+        <h1>Lista zadań</h1>
+      </header>
+      <section class="section__newTask">
+        <h2 class="newTask--header">Dodaj nowe zadanie</h2>
+      </section>
+      <section class="form__section">
+        <form class="form js-form">
+          <input
+            class="form__input js-new__task"
+            type="text"
+            id="input"
+            placeholder="dodaj zadanie"
+            autofocus
+            required
+          />
+          <button class="form__button js-form__button">Dodaj zadanie</button>
         </form>
       </section>
 
-      <section class="section">
-        <h2>Lista zadań</h2>
-        <ul class="form__ul js-form__ul">
-          
-          
-          
-
-        </ul>
+      <section class="tasks__section">
+        <h2 class="tasks_header">Lista zadań</h2>
+        <ul class="form__ul js-form__ul"></ul>
       </section>
     </div>
   </body>

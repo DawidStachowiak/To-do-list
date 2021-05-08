@@ -1,0 +1,31 @@
+.section__newTask{background-color:#FFF;
+    max-width: 95%;
+    margin:0 auto;
+    background-color: #FFFFFF;
+}
+
+.form__section{
+    max-width: 95%;
+    margin:0 auto;
+    background-color: #FFFFFF;
+}
+
+.tasks__section{
+    max-width: 95%;
+    margin:0 auto;
+    background-color: #FFFFFF;
+}
+
+.newTask--header{
+    padding: 18px;
+  margin: 2px;
+  color: #050505;
+  
+}
+
+.tasks_header{
+    padding: 18px;
+    margin: 2px;
+    color: #050505;
+    margin-top:10px;
+}
