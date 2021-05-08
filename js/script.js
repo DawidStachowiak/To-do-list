@@ -8,14 +8,20 @@
 
     for (const task of tasks) {
       htmlString += `
-    <li <span class=${task.done ? "\" list__item--done\">" : "\"list__item\">"}
-    <button class="js-remove">usun</button>
-    ${task.content}</span><i class="fas fa-trash"></i></li>
+    <li class="list__item">
+    <button class= "done__button js-done__button">${task.done ? "&#x2714" : ""}
+    </button>
+    <span class="listItem__span{${task.done ? "listItem__span--done" : ""}">${task.content}
+            </span>
+    <button class="js-remove__button"<i class="fas fa-trash "></i></button>
+    </li>
     `;
+
     }
+
     document.querySelector(".js-form__ul").innerHTML = htmlString;
 
-   const removeButtons = document.querySelectorAll(".js-remove");
+   const removeButtons = document.querySelectorAll(".js-remove__button");
 
    removeButtons.forEach( (removeButton, index) => {
        removeButton.addEventListener("click", () => {
@@ -26,7 +32,23 @@
 
        
    });
+
+   const toggleDoneButtons = document.querySelectorAll(".js-done__button");
+
+   toggleDoneButtons.forEach( (toggleDoneButton, index) => {
+       toggleDoneButton.addEventListener("click", () => {
+
+            toggleTaskDone(index);
+
+       });
+
+       
+   });
+
+
   };
+
+  
 
   const toggleTaskDone = (taskIndex) => {
     tasks[taskIndex].done = !tasks[taskIndex].done;

@@ -2,35 +2,32 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-header {
-  background: rgb(39, 163, 246);
-  background: linear-gradient(
-    90deg,
-    rgba(39, 163, 246, 1) 0%,
-    rgba(49, 137, 179, 1) 49%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  text-align: center;
-  padding: 30px;
-  color: white;
+.header {
+    display: flex;
+    justify-content: start;
+  margin:10px auto;
+  padding: 5px;
+  color: #000;
+  border-bottom: 1px solid #C0C0C0;
 }
 
 h1 {
-  margin-bottom: 15px;
+  margin-left:20px;
 }
 
 h2 {
   padding: 10px;
   margin: 5px;
-  color: cornsilk;
+  color: #000;
+  border-bottom: 1px solid #838586;
 }
 
 .form__input {
   padding: 10px;
-  border: none;
+  border: 1px solid #808080;
   border-radius: 3px;
   flex-basis: 60%;
   margin: 15px;
@@ -38,7 +35,7 @@ h2 {
 
 @media (max-width: 590px) {
   .form__input {
-    flex-basis: 80%;
+    flex-basis: 70%;
     margin-top: 10px;
   }
 }
@@ -50,25 +47,13 @@ h2 {
   cursor: pointer;
   text-align: center;
   transition: 0.3s;
-  background: rgb(224, 118, 14);
-  background: linear-gradient(
-    90deg,
-    rgba(224, 118, 14, 1) 0%,
-    rgba(224, 75, 23, 1) 49%,
-    rgba(224, 118, 14, 1) 100%
-  );
+  background-color: #008080;
   color: white;
   flex-basis: 25%;
 }
 
 .form__button:hover {
-  background: rgb(245, 123, 3);
-  background: linear-gradient(
-    90deg,
-    rgba(245, 123, 3, 1) 0%,
-    rgba(247, 67, 4, 1) 49%,
-    rgba(245, 123, 3, 1) 100%
-  );
+  background-color: #008050;
 }
 
 @media (max-width: 590px) {
@@ -87,12 +72,16 @@ ul {
 .list__item {
   list-style: none;
   cursor: pointer;
-  background: #eee;
   padding: 20px;
   border-bottom: 1px solid #838586;
-  user-select: none;
-  position: relative;
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 25fr 1fr;
+  word-break: break-all;
 }
+
+
 
 .list__item--done {
   text-decoration: line-through;
@@ -105,23 +94,37 @@ ul {
   position: relative;
 }
 
-.list__item:nth-child(add) {
-  background: #b2bec3;
+.list__item:nth-child() {
+  background: #828485;
 }
 
-.list__item:hover {
-  background: #ddd;
-}
 
 .fas {
   position: absolute;
   right: 10px;
 }
 
-.list__item--done {
-  color: green;
+
+
+
+.done__button{
+
+    background-color: green;
+    max-width:40px;
+    max-height:40px;
+    display: flex;
+    align-items: center;
 }
 
-.list__item--remove {
-  color: red;
+.js-remove__button{
+    background-color: #FF0000;
+    max-width:40px;
+    max-height:40px;
 }
+
+.listItem__span{
+  margin-left: 10px;
+  margin-right:10px;
+}
+
+.listItem__span--done{text-decoration: line-through};
