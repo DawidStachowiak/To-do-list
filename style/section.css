@@ -17,14 +17,14 @@
 }
 
 .newTask--header{
-    padding: 18px;
+padding: 18px;
   margin: 2px;
   color: #050505;
   
 }
 
 .tasks__header{
-    padding: 18px;
+    padding: 20px;
     margin-top: 10px;
     border-bottom: 3px solid #EFEFEF;
     margin-bottom: 30px;
