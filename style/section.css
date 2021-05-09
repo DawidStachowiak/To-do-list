@@ -23,9 +23,9 @@
   
 }
 
-.tasks_header{
+.tasks__header{
     padding: 18px;
-    margin: 2px;
-    color: #050505;
-    margin-top:10px;
+    margin-top: 10px;
+    border-bottom: 3px solid #EFEFEF;
+    margin-bottom: 30px;
 }

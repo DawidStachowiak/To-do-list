@@ -1,14 +1,5 @@
-.container{
-    
-    width: 100%;
-    max-width: 980px;
-    margin:0 auto;
-    
-}
-
-
-.section{
-    background-color:#FFF;
-    max-width: 95%;
-    margin:0 auto;
+.container {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
 }

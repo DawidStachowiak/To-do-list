@@ -6,19 +6,16 @@
 }
 
 .header {
-    display: flex;
-    justify-content: start;
-  margin:10px auto;
+  display: flex;
+  justify-content: start;
+  margin: 10px auto;
   padding: 5px;
   color: #050505;
-  
 }
 
 h1 {
-  margin-left:20px;
+  margin-left: 20px;
 }
-
-
 
 .form__input {
   padding: 10px;
@@ -42,9 +39,9 @@ h1 {
   cursor: pointer;
   text-align: center;
   transition: 0.3s;
-  background-color: #2E747C;
+  background-color: #2e747c;
   color: white;
-  flex-basis: 17%;
+  flex-basis: 16%;
 }
 
 .form__button:hover {
@@ -69,14 +66,12 @@ ul {
   cursor: pointer;
   padding: 20px;
   border-bottom: 1px solid #838586;
-  display:grid;
+  display: grid;
   align-items: center;
   justify-content: center;
   grid-template-columns: 1fr 25fr 1fr;
   word-break: break-all;
 }
-
-
 
 /*.list__item--done {
   text-decoration: line-through;
@@ -95,33 +90,30 @@ ul {
   background: #828485;
 }
 
-
 .fas {
   position: absolute;
   right: 10px;
 }
 
-
-
-
-.done__button{
-
-    background-color: #008000;
-    width:40px;
-    height:40px;
-    padding: 7px;
+.done__button {
+  background-color: #008000;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
 }
 
-.js-remove__button{
-    background-color: #FF0000;
-    width:40px;
-    height:40px;
-    padding: 7px;
+.js-remove__button {
+  background-color: #ff0000;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
 }
 
-.taskList__span{
+.taskList__span {
   margin-left: 10px;
-  margin-right:10px;
+  margin-right: 10px;
 }
 
-.taskList__span--done{text-decoration: line-through};
+.taskList__span--done {
+  text-decoration: line-through;
+}
