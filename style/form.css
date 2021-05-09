@@ -35,13 +35,13 @@ h1 {
 .form__button {
   padding: 13px;
   border: none;
-  border-radius: 3px;
   cursor: pointer;
   text-align: center;
   transition: 0.3s;
   background-color: #2e747c;
   color: white;
   flex-basis: 16%;
+  border: none;
 }
 
 .form__button:hover {
@@ -63,7 +63,6 @@ ul {
 
 .list__item {
   list-style: none;
-  cursor: pointer;
   padding: 20px;
   border-bottom: 1px solid #838586;
   display: grid;
@@ -73,26 +72,8 @@ ul {
   word-break: break-all;
 }
 
-/*.list__item--done {
-  text-decoration: line-through;
-  list-style: none;
-  cursor: pointer;
-  background: #eee;
-  padding: 20px;
-  border-bottom: 1px solid #838586;
-  user-select: none;
-  position: relative;
-
-}
-
-*/
-.list__item:nth-child() {
+.list__item:nth-child {
   background: #828485;
-}
-
-.fas {
-  position: absolute;
-  right: 10px;
 }
 
 .done__button {
@@ -100,6 +81,7 @@ ul {
   width: 40px;
   height: 40px;
   padding: 7px;
+  border: none;
 }
 
 .js-remove__button {
@@ -107,6 +89,7 @@ ul {
   width: 40px;
   height: 40px;
   padding: 7px;
+  border: none;
 }
 
 .taskList__span {
