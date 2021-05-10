@@ -4,29 +4,8 @@
     background-color: #FFFFFF;
 }
 
-.form__section{
+.section{
     max-width: 95%;
     margin:0 auto;
     background-color: #FFFFFF;
-}
-
-.tasks__section{
-    max-width: 95%;
-    margin:0 auto;
-    background-color: #FFFFFF;
-}
-
-.newTask--header{
-padding: 18px;
-  margin: 2px;
-  color: #050505;
-  
-}
-
-.tasks__header{
-    padding: 20px;
-    margin-top: 10px;
-    border-bottom: 3px solid #EFEFEF;
-    margin-bottom: 30px;
-    margin-left: 5px;
 }

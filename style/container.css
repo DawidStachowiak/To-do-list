@@ -1,5 +1,17 @@
 .container {
   width: 100%;
-  max-width: 980px;
-  margin: 0 auto;
+  max-width: 850px;
+  margin: 15px auto;
+  display: grid;
+  background: white;
+  grid-row-gap:2px;
+}
+
+.container__form{
+  padding:10px;
+}
+
+
+.container__header{
+  margin-left: 10px;  
 }

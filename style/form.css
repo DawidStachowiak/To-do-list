@@ -2,8 +2,17 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
 }
+
+@media (max-width: 768px) {
+  .form {
+    margin-top: 10px;
+  }
+}
+
+
 
 .header {
   display: flex;
@@ -13,9 +22,6 @@
   color: #050505;
 }
 
-h1 {
-  margin-left: 20px;
-}
 
 ul {
   margin: 0px;
@@ -27,10 +33,9 @@ ul {
   padding: 20px;
   border-bottom: 1px solid #838586;
   display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: 1fr 25fr 1fr;
+  align-items:center;
   word-break: break-all;
+  grid-template-columns:35px auto 40px ;
 }
 
 .list__item:nth-child {
@@ -40,6 +45,7 @@ ul {
 .taskList__span {
   margin-left: 10px;
   margin-right: 10px;
+
 }
 
 .taskList__span--done {
@@ -55,28 +61,20 @@ ul {
   transition: 0.3s;
   background-color: #2e747c; 
   color: white;
-  flex-basis: 14%;
+  flex-grow: 0;
+  margin-left: 10px;
+  
 }
 
 .form__input {
   padding: 10px;
   border: 1px solid #808080;
   border-radius: 3px;
-  flex-basis: 79%;
-  margin: 15px;
+  flex-grow: 1;
+  
 }
 
-.form__button {
-  padding: 13px;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  transition: 0.3s;
-  background-color: #2e747c;
-  color: white;
-  flex-basis: 16%;
-  border: none;
-}
+
 
 .form__button:hover {
   background-color: #3d858d;
@@ -84,16 +82,16 @@ ul {
 
 @media (max-width: 768px) {
   .form__button {
-    flex-basis: 90%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    flex-basis: 100%;
+    margin:10px 0;
+    
   }
 }
 
 @media (max-width: 768px) {
   .form__input {
-    flex-basis: 90%;
-    margin-top: 10px;
+    flex-basis: 100%;
+    
   }
 }
 
@@ -101,14 +99,16 @@ ul {
   background-color: #008000;
   width: 40px;
   height: 40px;
-  padding: 7px;
+  
   border: none;
+  color: #fff;
 }
 
-.js-remove__button {
+.remove__button {
   background-color: #ff0000;
   width: 40px;
   height: 40px;
-  padding: 7px;
+  
   border: none;
+  color: #fff;
 }

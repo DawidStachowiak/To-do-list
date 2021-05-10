@@ -27,16 +27,15 @@
     <li class="list__item">
     <button class="done__button js-done__button">${task.done ? "&#10003;" : ""}
     </button>
-    <span class="taskList__span${task.done ? " taskList__span--done" : ""}">${
-        task.content
-      }
-            </span>
-    <button class="js-remove__button">&#128465;</button>
+    <span class="taskList__span${task.done ? " taskList__span--done" : ""}">
+    ${task.content}
+    </span>
+    <button class="remove__button js-remove__button">&#128465;</button>
     </li>
     `;
     }
 
-    document.querySelector(".js-form__ul").innerHTML = htmlString;
+    document.querySelector(".js-unorderList").innerHTML = htmlString;
 
     bindEvents();
   };
