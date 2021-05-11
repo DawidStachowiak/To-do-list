@@ -1,17 +1,21 @@
 .container {
-  width: 100%;
-  max-width: 850px;
-  margin: 15px auto;
+  margin: 10px 10px;
   display: grid;
   background: white;
-  grid-row-gap:2px;
+  grid-row-gap: 2px;
+  grid-auto-rows: minmax(65px, auto);
 }
 
-.container__form{
-  padding:10px;
+.container__form {
+  padding: 10px;
 }
 
+.container__header {
+  margin-left: 10px;
+}
 
-.container__header{
-  margin-left: 10px;  
+@media (max-width: 768px) {
+  .container {
+    margin: 10px 15px;
+  }
 }
