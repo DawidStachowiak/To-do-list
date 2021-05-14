@@ -1,68 +1,62 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-      crossorigin="anonymous"
-    />
-    <link rel="icon" href="image/favicon.png" />
-    <link rel="stylesheet" href="style/global.css" />
-    <link rel="stylesheet" href="style/container.css" />
-    <link rel="stylesheet" href="style/form.css" />
-    <link rel="stylesheet" href="style/section.css" />
-    <script defer src="js/script.js"></script>
 
-    <title>To do list</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+    crossorigin="anonymous" />
+  <link rel="icon" href="image/favicon.png" />
+  <link rel="stylesheet" href="style/global.css" />
+  <link rel="stylesheet" href="style/container.css" />
+  <link rel="stylesheet" href="style/form.css" />
+  <link rel="stylesheet" href="style/section.css" />
+  <script defer src="js/script.js"></script>
 
-  <body>
-    <h1 class="body__header">Lista zadań</h1>
-    <div class="container">
+  <title>To do list</title>
+</head>
 
-      <div class="container__section">
-        <h2 class="container__header">Dodaj nowe zadanie</h2>
-      </div>
-      
-      <div class="container__form">
-        
-        <form class="form js-form">
-          <input
-            class="form__input js-new__task"
-            placeholder="Co jest do zrobienia?"
-            autofocus
-            required
-          />
-          <button class="form__button js-form__button">Dodaj zadanie</button>
-        </form>
-      </div>
+<body>
+  <h1 class="body__header">Lista zadań</h1>
+  <div class="container">
 
-      
-
-       
+    <div class="container__section">
+      <h2 class="container__sectionHeader">Dodaj nowe zadanie</h2>
     </div>
 
-    <div class="container">
+    <div class="container__form">
 
-      <div class="container__section">
-        <h2 class="container__header">Lista zadań</h2>
-      </div>
-      
-      <div class="container__tasksItems">
-        <ul class="container__unorderList js-unorderList">
-
-          
-        </ul>
-        
-      </div>
-
-      
-
-       
+      <form class="form js-form">
+        <input class="form__input js-new__task" placeholder="Co jest do zrobienia?" autofocus required />
+        <button class="form__button js-form__button">Dodaj zadanie</button>
+      </form>
     </div>
-  </body>
+
+
+
+
+  </div>
+
+  <div class="container">
+
+    <div class="container__section">
+      <h2 class="container__sectionHeader">Lista zadań</h2>
+    </div>
+
+    <div class="container__tasksItems">
+      <ul class="container__unorderList js-unorderList">
+
+
+      </ul>
+
+    </div>
+
+
+
+
+  </div>
+</body>
+
 </html>

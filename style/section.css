@@ -1,11 +1,5 @@
-.section__newTask{background-color:#FFF;
+.section {
     max-width: 95%;
-    margin:0 auto;
-    background-color: #FFFFFF;
-}
-
-.section{
-    max-width: 95%;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: #FFFFFF;
 }

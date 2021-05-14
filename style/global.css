@@ -1,20 +1,18 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  ::after,
-  ::before {
-    box-sizing: inherit;
-  }
-  
-  body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 auto;
-    background-color:#EFEFEF;
-    max-width: 850px;
-  }
+  box-sizing: border-box;
+}
 
-  .body__header{
-    margin-left:10px;
-  }
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 auto;
+  background-color: #EFEFEF;
+  max-width: 850px;
+}
+
+.body__header {
+  margin-left: 10px;
+}

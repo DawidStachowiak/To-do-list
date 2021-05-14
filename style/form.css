@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-
 }
 
 @media (max-width: 768px) {
@@ -11,8 +10,6 @@
     margin-top: 10px;
   }
 }
-
-
 
 .header {
   display: flex;
@@ -22,10 +19,8 @@
   color: #050505;
 }
 
-
 ul {
   margin: 0px;
-  display: contents;
 }
 
 .list__item {
@@ -33,9 +28,9 @@ ul {
   padding: 20px;
   border-bottom: 1px solid #838586;
   display: grid;
-  align-items:center;
+  align-items: center;
   word-break: break-all;
-  grid-template-columns:35px auto 40px ;
+  grid-template-columns: 35px auto 40px;
 }
 
 .list__item:nth-child {
@@ -45,7 +40,6 @@ ul {
 .taskList__span {
   margin-left: 10px;
   margin-right: 10px;
-
 }
 
 .taskList__span--done {
@@ -59,25 +53,20 @@ ul {
   cursor: pointer;
   text-align: center;
   transition: 0.3s;
-  background-color: #2e747c; 
+  background-color: #2e747c;
   color: white;
   flex-grow: 0;
   margin-left: 20px;
-  
 }
 
 .form__input {
-  
-  
   border-radius: 3px;
   flex-grow: 1;
   padding: 10px;
   border: 1px solid #DFDEDF;
   border-radius: 2px;
-  margin-left:15px;
+  margin-left: 15px;
 }
-
-
 
 .form__button:hover {
   background-color: #3d858d;
@@ -86,15 +75,14 @@ ul {
 @media (max-width: 768px) {
   .form__button {
     flex-basis: 100%;
-    margin:10px 0;
-    
+    margin: 10px 0;
   }
 }
 
 @media (max-width: 768px) {
   .form__input {
     flex-basis: 100%;
-    margin:0px;
+    margin: 0px;
   }
 }
 
@@ -102,7 +90,6 @@ ul {
   background-color: #008000;
   width: 35px;
   height: 35px;
-  
   border: none;
   color: #fff;
 }
@@ -111,7 +98,6 @@ ul {
   background-color: #EB293C;
   width: 35px;
   height: 35px;
-  
   border: none;
   color: #fff;
 }
