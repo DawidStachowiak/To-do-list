@@ -11,14 +11,6 @@
   }
 }
 
-.header {
-  display: flex;
-  justify-content: start;
-  margin: 10px auto;
-  padding: 5px;
-  color: #050505;
-}
-
 ul {
   margin: 0px;
 }
@@ -63,7 +55,7 @@ ul {
   border-radius: 3px;
   flex-grow: 1;
   padding: 10px;
-  border: 1px solid #DFDEDF;
+  border: 1px solid #dfdedf;
   border-radius: 2px;
   margin-left: 15px;
 }
@@ -95,7 +87,7 @@ ul {
 }
 
 .remove__button {
-  background-color: #EB293C;
+  background-color: #eb293c;
   width: 35px;
   height: 35px;
   border: none;
