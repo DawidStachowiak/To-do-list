@@ -10,8 +10,8 @@
   padding: 10px;
 }
 
-.container__header {
-  margin-left: 10px;
+.container__section {
+  
   border-bottom: 3px solid #EFEFEF;
 }
 
@@ -19,4 +19,11 @@
   .container {
     margin: 10px 15px;
   }
+}
+
+
+.container__header{
+  margin-left:20px;
+  font-size: 19px;
+  padding:5px;
 }
