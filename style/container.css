@@ -12,6 +12,7 @@
 
 .container__header {
   margin-left: 10px;
+  border-bottom: 3px solid #EFEFEF;
 }
 
 @media (max-width: 768px) {

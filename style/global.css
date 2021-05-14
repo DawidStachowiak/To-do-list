@@ -14,3 +14,7 @@ html {
     background-color:#EFEFEF;
     max-width: 850px;
   }
+
+  .body__header{
+    margin-left:10px;
+  }
