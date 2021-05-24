@@ -25,3 +25,7 @@
   font-size: 19px;
   padding: 5px;
 }
+
+.container__unorderList{
+  padding:0px;
+}
