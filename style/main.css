@@ -1,4 +1,4 @@
-.container {
+.main {
   margin: 10px 10px;
   display: grid;
   background: white;
@@ -6,21 +6,21 @@
   grid-auto-rows: minmax(65px, auto);
 }
 
-.container__form {
+.main__form {
   padding: 10px;
 }
 
-.container__section {
+.main__section {
   border-bottom: 3px solid #EFEFEF;
 }
 
 @media (max-width: 768px) {
-  .container {
+  .main {
     margin: 10px 15px;
   }
 }
 
-.container__sectionHeader {
+.main__sectionHeader {
   margin-left: 20px;
   font-size: 19px;
   padding: 5px;
