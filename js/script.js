@@ -1,5 +1,5 @@
 {
-  const tasks = [];
+  let tasks = [];
 
   const bindEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove__button");
@@ -17,9 +17,9 @@
         toggleTaskDone(index);
       });
     });
-  };
+  };0
 
-  const display = () => {
+  const render = () => {
     let htmlString = "";
 
     for (const task of tasks) {
@@ -42,19 +42,24 @@
 
   const toggleTaskDone = (taskIndex) => {
     tasks[taskIndex].done = !tasks[taskIndex].done;
-    display();
+    render();
   };
 
-  const addNewTask = () => {
-    tasks.push({
-      content: newTaskContent,
-    });
-    display();
+  const addNewTask = (newTaskContent) => {
+    tasks = [
+      ...tasks,
+      { content: newTaskContent, done:false },
+    ];
+
+    render();
   };
 
-  const removeTask = (index) => {
-    tasks.splice(index, 1);
-    display();
+  const removeTask = (taskIndex) => {
+    tasks = [
+      ...tasks.slice(0, taskIndex),
+      ...tasks.slice(taskIndex + 1),
+    ];
+    render();
   };
 
   const clearInput = (somethingToDo) => {

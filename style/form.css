@@ -35,7 +35,7 @@
 }
 
 .form__button:hover {
-  background-color: #3d858d;
+  background-color: #3d858dc9;
   transform: scale(1.1);
 
 }
@@ -60,6 +60,11 @@
   height: 35px;
   border: none;
   color: #fff;
+  transition: 0.5s;
+}
+
+.done__button:hover{
+  background-color: #008000b7;
 }
 
 .remove__button {
@@ -68,4 +73,10 @@
   height: 35px;
   border: none;
   color: #fff;
+  transition: 0.5s;
+}
+
+.remove__button:hover{
+  
+  background-color: #eb293cb4;
 }
