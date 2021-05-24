@@ -29,3 +29,34 @@
 .container__unorderList{
   padding:0px;
 }
+
+.main__buttons{
+  display: grid;
+}
+
+.main__unorderList{
+  padding:0px;
+}
+
+.list__item {
+  list-style: none;
+  padding: 20px;
+  border-bottom: 1px solid #838586;
+  display: grid;
+  align-items: center;
+  word-break: break-all;
+  grid-template-columns: 35px auto 40px;
+}
+
+.list__item:nth-child {
+  background: #828485;
+}
+
+.taskList__span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.taskList__span--done {
+  text-decoration: line-through;
+}
