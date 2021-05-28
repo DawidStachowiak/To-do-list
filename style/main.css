@@ -12,11 +12,20 @@
 
 .main__section {
   border-bottom: 3px solid #EFEFEF;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-gap: 10px;
+    justify-content: space-between;
 }
 
 @media (max-width: 768px) {
   .main {
     margin: 10px 15px;
+  }
+
+  .main__buttons{
+    grid-template-columns: 1fr;
   }
 }
 
@@ -30,9 +39,7 @@
   padding:0px;
 }
 
-.main__buttons{
-  display: grid;
-}
+
 
 .main__unorderList{
   padding:0px;
@@ -60,3 +67,22 @@
 .taskList__span--done {
   text-decoration: line-through;
 }
+
+.list__item--hide{
+  display: none;
+}
+
+.main__button{
+  padding: 5px;
+  border: none;
+  color:teal;
+  background: white;
+}
+
+.js-hideAllDone{
+  display:none;
+}
+
+.main__button:disabled {
+  color: #ccc;
+  cursor: not-allowed;}
