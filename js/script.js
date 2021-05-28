@@ -25,7 +25,7 @@
     render();
   };
 
-  //render
+  
   const renderTasks = () => {
     let HtmlString = "";
 
@@ -49,7 +49,7 @@
     
   };
 
-  //bindEvent
+  
 
   const bindEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove__button");
@@ -89,7 +89,7 @@
     render();
   };
 
-  //bindsButtons
+  
   const bindsButtonsEvents = () => {
     const hideDoneTasksButton = document.querySelector(".js-hideDoneTasks");
     hideDoneTasksButton.addEventListener("click", toggleHideTasksDone);
@@ -106,7 +106,7 @@
     });
   };
 
-  //renderButtons
+  
   const renderButtons = () => {
     const buttonsHtml = document.querySelector(".js-main__buttons");
 
@@ -128,7 +128,7 @@
     `;
     
   };
-  //koniecc!!!!!
+  
   const clearInput = (somethingToDo) => {
     somethingToDo.value = "";
     somethingToDo.focus();
