@@ -77,6 +77,12 @@
   border: none;
   color:teal;
   background: white;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.main__button:hover{
+  color:rgb(2, 175, 175);
 }
 
 .js-hideAllDone{
@@ -84,5 +90,5 @@
 }
 
 .main__button:disabled {
-  color: #ccc;
+  color: rgba(204, 204, 204, 0.953);
   cursor: not-allowed;}

@@ -1,66 +1,57 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="image/favicon.png" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/form.css" />
+    <link rel="stylesheet" href="style/section.css" />
+    <script defer src="js/script.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-    crossorigin="anonymous" />
-  <link rel="icon" href="image/favicon.png" />
-  <link rel="stylesheet" href="style/global.css" />
-  <link rel="stylesheet" href="style/main.css" />
-  <link rel="stylesheet" href="style/form.css" />
-  <link rel="stylesheet" href="style/section.css" />
-  <script defer src="js/script.js"></script>
+    <title>To do list</title>
+  </head>
 
-  <title>To do list</title>
-</head>
+  <body>
+    <header><h1>Lista zadań</h1></header>
+    <div class="main">
+      <div class="main__section">
+        <h2 class="main__sectionHeader">Dodaj nowe zadanie</h2>
+      </div>
 
-<body>
-  <header><h1>Lista zadań</h1></header>
-  <div class="main">
-
-    <div class="main__section">
-      <h2 class="main__sectionHeader">Dodaj nowe zadanie</h2>
-    </div>
-
-    <div class="main__form">
-
-      <form class="form js-form">
-        <input class="form__input js-new__task" placeholder="Co jest do zrobienia?" autofocus required />
-        <button class="form__button js-form__button">Dodaj zadanie</button>
-      </form>
-    </div>
-
-
-
-
-  </div>
-
-  <div class="main">
-
-    <div class="main__section">
-      <h2 class="main__sectionHeader">Lista zadań</h2>
-      <div class="main__buttons js-main__buttons">
-        <button class="main__button js-hideDoneTasks"></button>
-        <button class="main__button js-completeAllTasks"></button>
+      <div class="main__form">
+        <form class="form js-form">
+          <input
+            class="form__input js-new__task"
+            placeholder="Co jest do zrobienia?"
+            autofocus
+            required
+          />
+          <button class="form__button js-form__button">Dodaj zadanie</button>
+        </form>
       </div>
     </div>
 
-    <div class="main__tasksItems">
-      <ul class="main__unorderList js-unorderList">
+    <div class="main">
+      <div class="main__section">
+        <h2 class="main__sectionHeader">Lista zadań</h2>
+        <div class="main__buttons js-main__buttons">
+          <button class="main__button js-hideDoneTasks"></button>
+          <button class="main__button js-completeAllTasks"></button>
+        </div>
+      </div>
 
-
-      </ul>
-
+      <div class="main__tasksItems">
+        <ul class="main__unorderList js-unorderList"></ul>
+      </div>
     </div>
-
-
-
-
-  </div>
-</body>
-
+  </body>
 </html>
