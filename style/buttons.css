@@ -20,3 +20,13 @@
   color: rgba(204, 204, 204, 0.953);
   cursor: not-allowed;
 }
+
+.buttons {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    flex-direction: column;
+  }
+}

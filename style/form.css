@@ -37,7 +37,6 @@
 .form__button:hover {
   background-color: #3d858dc9;
   transform: scale(1.1);
-
 }
 
 @media (max-width: 768px) {
@@ -63,7 +62,7 @@
   transition: 0.5s;
 }
 
-.done__button:hover{
+.done__button:hover {
   background-color: #008000b7;
 }
 
@@ -76,7 +75,6 @@
   transition: 0.5s;
 }
 
-.remove__button:hover{
-  
+.remove__button:hover {
   background-color: #eb293cb4;
 }
