@@ -89,7 +89,7 @@
       buttonsHtml.innerHTML = "";
       return;
     }
-    buttonsHtml.innerHTML = `
+      buttonsHtml.innerHTML = `
     <button class="button js-hideDoneTasks">
         ${hideTasksDone ? "Pokaż" : "Ukryj"} ukończone
     </button>
