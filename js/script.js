@@ -78,8 +78,7 @@
     );
     if (selectAllDoneTasksButton) {
       selectAllDoneTasksButton.addEventListener(
-        "click",
-        () => selectAllTasksDone
+        "click", selectAllTasksDone
       );
     }
   };
