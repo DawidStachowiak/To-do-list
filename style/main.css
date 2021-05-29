@@ -11,21 +11,17 @@
 }
 
 .main__section {
-  border-bottom: 3px solid #EFEFEF;
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    grid-gap: 10px;
-    justify-content: space-between;
+  border-bottom: 3px solid #efefef;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  grid-gap: 10px;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
   .main {
     margin: 10px 15px;
-  }
-
-  .main__buttons{
-    grid-template-columns: 1fr;
   }
 }
 
@@ -35,14 +31,8 @@
   padding: 5px;
 }
 
-.container__unorderList{
-  padding:0px;
-}
-
-
-
-.main__unorderList{
-  padding:0px;
+.main__unorderList {
+  padding: 0px;
 }
 
 .list__item {
@@ -55,10 +45,6 @@
   grid-template-columns: 35px auto 40px;
 }
 
-.list__item:nth-child {
-  background: #828485;
-}
-
 .taskList__span {
   margin-left: 10px;
   margin-right: 10px;
@@ -68,27 +54,6 @@
   text-decoration: line-through;
 }
 
-.list__item--hide{
+.list__item--hide {
   display: none;
 }
-
-.main__button{
-  padding: 5px;
-  border: none;
-  color:teal;
-  background: white;
-  transition: 1s;
-  cursor: pointer;
-}
-
-.main__button:hover{
-  color:rgb(2, 175, 175);
-}
-
-.js-hideAllDone{
-  display:none;
-}
-
-.main__button:disabled {
-  color: rgba(204, 204, 204, 0.953);
-  cursor: not-allowed;}
