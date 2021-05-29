@@ -101,19 +101,19 @@
     </button>
     `;
   };
-  const clearInput = (somethingToDo) => {
-    somethingToDo.value = "";
-    somethingToDo.focus();
+  const clearInput = (clearNewTaskContent) => {
+    clearNewTaskContent.value = "";
+    clearNewTaskContent.focus();
   };
   const onFormSubmit = (event) => {
     event.preventDefault();
-    const somethingToDo = document.querySelector(".js-new__task");
-    newTaskContent = somethingToDo.value.trim();
+    const clearNewTaskContent = document.querySelector(".js-new__task");
+    newTaskContent = clearNewTaskContent.value.trim();
     if (newTaskContent === "") {
       return;
     }
     addNewTask(newTaskContent);
-    clearInput(somethingToDo);
+    clearInput(clearNewTaskContent);
   };
   const init = () => {
     const form = document.querySelector(".js-form");
