@@ -31,7 +31,7 @@
       task.done && hideTasksDone ? " list__item--hide" : ""
     }">
     <button class="done__button js-done__button">
-      ${task.done ? "&#10003;" : ""}
+      ${task.done ? "✔;" : ""}
     </button>
     <span class="taskList__span${task.done ? " taskList__span--done" : ""}">
       ${task.content}
